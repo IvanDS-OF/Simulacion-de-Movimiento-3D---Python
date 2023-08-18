@@ -20,5 +20,55 @@ Primero colocamos las medidas de los lados del prisma y luego colocamos las coor
 
 ![Cubo](images/home/cubo.png)
 
+Escribimos el vector **Ones** que sirve para hacer la matriz de transformaciones la cual será definida a continuación. 
+
+Escribimos la función del movimiento que en este caso será: 
+
+```
+x = np.arange(0, 2*np.pi, 0.1)
+y = np.sin(x)*2
+```
+
+La figura a continuación es la representación gráfica de la función que describe el movimiento. 
+
+**COLOCAR LA IMAGEN DE LA FUNCION**
+
+Posteriormente comenzamos con la creación de la figura principal usando el comando necesario para hacer una proyección en 3D con el comando: 
+
+```
+plt.axes = plt.axes(projection = '3d')
+```
+
+Definimos un parámetro llamado **pause** que será parte de la animación. 
+
+
+### Animaciones / Animations. 
+
+Las animaciones estás basadas en solamente iteraciones **for**, en donde el contenido es el mismo, todo esto desde una programación tradicional en donde la simulación del movimiento del cubo. 
+
+La función **for** se repetirá el tamaño de la **y** veces. 
+Comenzamos por iterarel valor en la posición de la función **y**. Luego colocamos la matriz de traslación en X y le colocamos el valor que nos da la iteración, como se muestra a continuación: 
+
+```
+[
+[1, 0, 0, j], 
+[0, 1, 0, 0], 
+[0, 0, 1, 0], 
+[0, 0, 0 ,1]
+]
+```
+
+Luego hacemos un producto punto _( np.dot() )_ con la matriz anterior y la matriz principal que contiene los puntos del cubo.
+
+Finalmente 
+
+
+
+
+
+
+
+
+
 
 
