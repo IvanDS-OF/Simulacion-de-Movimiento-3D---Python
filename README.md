@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 Primero colocamos las medidas de los lados del prisma y luego colocamos las coordenadas que formarán el prisma. Recordando que un prisma se compone de **aristas (unión entre vértices)** y **vértices (esquinas)** y que para formar un cubo es necesario tener 8 vértices para formar 6 caras, como se muestra en la siguiente firuga: 
 
-![Cubo](images/home/Images.py)
+![Cubo](images/home/cubo.png)
 
 
 
