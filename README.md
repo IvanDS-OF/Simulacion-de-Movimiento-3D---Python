@@ -47,7 +47,7 @@ Definimos un parámetro llamado **pause** que será parte de la animación.
 Las animaciones estás basadas en solamente iteraciones **for**, en donde el contenido es el mismo, todo esto desde una programación tradicional en donde la simulación del movimiento del cubo. 
 
 La función **for** se repetirá el tamaño de la **y** veces. 
-Comenzamos por iterarel valor en la posición de la función **y**. Luego colocamos la matriz de traslación en X y le colocamos el valor que nos da la iteración, como se muestra a continuación: 
+Comenzamos por iterar el valor en la posición de la función **y**. Luego colocamos la matriz de traslación en X y le colocamos el valor que nos da la iteración, como se muestra a continuación: 
 
 ```
 [
@@ -60,10 +60,42 @@ Comenzamos por iterarel valor en la posición de la función **y**. Luego coloca
 
 Luego hacemos un producto punto _( np.dot() )_ con la matriz anterior y la matriz principal que contiene los puntos del cubo.
 
-Finalmente 
+Finalmente, mostramos uno a uno los frames generados en ese momento.
+
+La lìnea:
+
+```
+plot_axes.scatter([-5, 5], [-5, 5], [-5, 5], c="w") #Fijamos límites
+```
+
+Es una forma ingeniosa para tener una ejes fijos. La idea es colocar puntos _(scatter)_ en unos extremos y dejarlos fijos, con la finalidad de dejar un espacio fijo. 
+
+La lìnea: 
+
+```
+plt.pause(pauseV)
+```
+
+Sirve para hacer una pausa en la simulaciòn, con la finalidad de que nuestro equipo pueda mostrar los frames uno a uno. 
 
 
-a
+**Generalidades**
+
+El còdigo està compuesto mayormente por ciclos **for** que cuntienen al inicio del ciclo la evaluaciòn individual de la funciòn **seno()** para observar el movimiento.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
