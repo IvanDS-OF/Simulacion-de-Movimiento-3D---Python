@@ -63,7 +63,7 @@ Luego hacemos un producto punto _( np.dot() )_ con la matriz anterior y la matri
 Finalmente 
 
 
-
+a
 
 
 
